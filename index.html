@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indkøbsliste - Unblock Middag</title>
+    <title>Søndagsplan - Unblock Middag</title>
     <style>
         body {
             font-family: sans-serif;
-            font-size: 16px; /* Sikrer en god basis skriftstørrelse */
+            font-size: 16px;
             line-height: 1.6;
-            margin: 20px; /* Standard margin for større skærme */
+            margin: 20px;
             background-color: #f8f9fa;
         }
         h1 {
             text-align: center;
             color: #343a40;
-            font-size: 1.8em; /* Justeret overskriftstørrelse */
+            font-size: 1.8em;
         }
         .category {
             background-color: #ffffff;
@@ -30,7 +30,7 @@
             border-bottom: 2px solid #e9ecef;
             padding-bottom: 5px;
             margin-top: 0;
-            font-size: 1.4em; /* Justeret kategori-overskrift */
+            font-size: 1.4em;
         }
         ul {
             list-style: none;
@@ -38,40 +38,36 @@
             margin-top: 10px;
         }
         li {
-            margin-bottom: 12px; /* Lidt mere plads mellem linjer */
-            display: flex; /* Gør det nemmere at aligne boks og tekst */
-            align-items: flex-start; /* Juster alignment hvis tekst brydes over flere linjer */
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
         }
         input[type="checkbox"] {
             margin-right: 10px;
             cursor: pointer;
-            transform: scale(1.3); /* Lidt større checkbox for nemmere tryk */
-            margin-top: 3px; /* Justerer boksen lodret ift. teksten */
-            flex-shrink: 0; /* Forhindrer checkbox i at skrumpe */
+            transform: scale(1.3);
+            margin-top: 3px;
+            flex-shrink: 0;
         }
         label {
             cursor: pointer;
             color: #212529;
-            flex-grow: 1; /* Tillader label at tage resterende plads */
+            flex-grow: 1;
         }
-        /* Style for checked items */
         input[type="checkbox"]:checked + label {
             text-decoration: line-through;
             color: #6c757d;
         }
-         /* Note style */
         .note {
-            font-size: 0.85em; /* Lidt mindre note */
+            font-size: 0.85em;
             color: #6c757d;
-            display: block; /* Sørger for at noten er på ny linje under label */
-            margin-top: 2px; /* Lidt luft over noten */
+            display: block;
+            margin-top: 2px;
         }
-
-        /* ----- Media Query for mobilskærme ----- */
         @media (max-width: 600px) {
             body {
-                margin: 10px; /* Mindre margin på små skærme */
-                font-size: 15px; /* Evt. lidt mindre skrift på små skærme */
+                margin: 10px;
+                font-size: 15px;
             }
             h1 {
                 font-size: 1.6em;
@@ -87,80 +83,75 @@
 </head>
 <body>
 
-    <h1>Indkøbsliste - Unblock Middag (9 pers.)</h1>
+    <h1>Søndagsplan - Unblock Middag</h1>
 
     <div class="category">
-        <h2>Frugt & Grønt Afdeling</h2>
+        <h2>Formiddag / Tidlig Eftermiddag</h2>
         <ul>
-            <li><input type="checkbox" id="item1"><label for="item1">Blandede rodfrugter (Gulerod, pastinak, persillerod, knoldselleri - ca. 1,1 kg skrællet) <span class="note">til lagdelt forret</span></label></li>
-            <li><input type="checkbox" id="item2"><label for="item2">Blandede svampe (Markchampignon, østershatte, shiitake el. lign. - ca. 800g - 1 kg) <span class="note">til bygotto</span></label></li>
-            <li><input type="checkbox" id="item3"><label for="item3">Tørrede svampe (f.eks. Karl Johan, portobello - ca. 20-30g) <span class="note">Til at blende til pulver til 'jord'</span></label></li>
-            <li><input type="checkbox" id="item4"><label for="item4">Løg (3-4 stk)</label></li>
-            <li><input type="checkbox" id="item5"><label for="item5">Hvidløg (1 helt løg)</label></li>
-            <li><input type="checkbox" id="item6"><label for="item6">Frisk persille (1 stort bundt) <span class="note">til skum</span></label></li>
-            <li><input type="checkbox" id="item7"><label for="item7">Citroner (2-3 stk) <span class="note">til skum + rødkålsjuice</span></label></li>
-            <li><input type="checkbox" id="item8"><label for="item8">Frisk timian (1 bundt/potte)</label></li>
-            <li><input type="checkbox" id="item9"><label for="item9">Rødkål (ca. 300-400g / lille hoved) <span class="note">til juice til suppe</span></label></li>
-            <li><input type="checkbox" id="item10"><label for="item10">Husk: Tjek grøntsager til grundsuppe (løg, porre, selleri etc.)</label></li>
+            <li><input type="checkbox" id="sun1"><label for="sun1">Dæk bordet</label></li>
+            <li><input type="checkbox" id="sun2"><label for="sun2">Gør velkomstdrinks/snacks klar</label></li>
+            <li><input type="checkbox" id="sun3"><label for="sun3">Lav Rødkålsjuice</label> <span class="note">Pres/blend/si rødkål (150-270ml), tilsæt citrondråber, opbevar koldt & lufttæt</span></li>
+            <li><input type="checkbox" id="sun4"><label for="sun4">Klargør Citronsaft til Suppe</label> <span class="note">Pres citron, klargør pipetter/kander/skåle til bordet</span></li>
         </ul>
     </div>
 
     <div class="category">
-        <h2>Frost Afdeling</h2>
+        <h2>Ca. 1 time før gæsterne kommer</h2>
         <ul>
-            <li><input type="checkbox" id="item11"><label for="item11">Frosne jordskokker (ca. 1 kg) <span class="note">Til puré</span></label></li>
+            <li><input type="checkbox" id="sun5"><label for="sun5">Saml Forret ("Unblock")</label> <span class="note">Jord -> Rygeost -> Glaserede Rodfrugter -> Top-jord. Dæk til, evt. på køl. Vent med Parmesan Knas!</span></li>
+            <li><input type="checkbox" id="sun6"><label for="sun6">Klargør til Hovedret</label> <span class="note">Sæt gryder frem, mål bouillon op, find ingredienser frem, klargør skum-setup</span></li>
         </ul>
     </div>
 
     <div class="category">
-        <h2>Kød & Pålæg / Delikatesse Afdeling</h2>
+        <h2>Lige før / Mens Gæsterne Ankommer</h2>
         <ul>
-            <li><input type="checkbox" id="item12"><label for="item12">Confiterede andelår (Duck Confit - færdiglavet) (6-9 stk) <span class="note">Tjek køl/delikatesse/konserves</span></label></li>
-        </ul>
-    </div>
-
-     <div class="category">
-        <h2>Køl & Mejeri Afdeling</h2>
-        <ul>
-            <li><input type="checkbox" id="item13"><label for="item13">Rygeost (ca. 350g)</label></li>
-            <li><input type="checkbox" id="item14"><label for="item14">Smør (1 pakke, f.eks. 250g)</label></li>
-            <li><input type="checkbox" id="item15"><label for="item15">Mælk (1 liter)</label></li>
-            <li><input type="checkbox" id="item16"><label for="item16">Piskefløde (½ liter)</label></li>
-            <li><input type="checkbox" id="item17"><label for="item17">Creme Fraiche (1 bæger, valgfrit)</label></li>
-            <li><input type="checkbox" id="item18"><label for="item18">Parmesanost (ca. 200g)</label></li>
+            <li><input type="checkbox" id="sun7"><label for="sun7">Start Andelår</label> <span class="note">Sæt i ovn/pande iflg. anvisning (ca. 15-25 min). Timing ift. hovedret!</span></li>
+            <li><input type="checkbox" id="sun8"><label for="sun8">Server Velkomstdrink/Snacks</label></li>
         </ul>
     </div>
 
     <div class="category">
-        <h2>Kolonial / Tørvarer Afdeling</h2>
+        <h2>Servering af Suppe ("Awakening")</h2>
         <ul>
-            <li><input type="checkbox" id="item19"><label for="item19">Perlebyg (ca. 750g)</label></li>
-            <li><input type="checkbox" id="item20"><label for="item20">Grøntsagsbouillon (pulver/terning/fond - til ca. 2 liter)</label></li>
-            <li><input type="checkbox" id="item21"><label for="item21">Hvidvin (valgfrit, ca. 250 ml)</label></li>
-            <li><input type="checkbox" id="item22"><label for="item22">Olivenolie (god kvalitet)</label></li>
-            <li><input type="checkbox" id="item23"><label for="item23">Smagsneutral olie (f.eks. raps)</label></li>
-            <li><input type="checkbox" id="item24"><label for="item24">Salt (almindeligt & evt. flage)</label></li>
-            <li><input type="checkbox" id="item25"><label for="item25">Sort peber (hele korn)</label></li>
-            <li><input type="checkbox" id="item26"><label for="item26">Sukker (eller honning/ahornsirup)</label></li>
-            <li><input type="checkbox" id="item27"><label for="item27">Muskatnød (hel eller stødt)</label></li>
-            <li><input type="checkbox" id="item28"><label for="item28">Sorte oliven u. sten (1 glas) <span class="note">Valgfrit til 'jord'</span></label></li>
-            <li><input type="checkbox" id="item29"><label for="item29">Sesamkorn (1 pose/glas) <span class="note">Valgfrit til 'jord'</span></label></li>
-            <li><input type="checkbox" id="item30"><label for="item30">Trøffelolie (valgfrit)</label></li>
-        </ul>
-    </div>
-
-     <div class="category">
-        <h2>Bager Afdeling / Brød Hylde</h2>
-        <ul>
-            <li><input type="checkbox" id="item31"><label for="item31">Mørkt rugbrød u. kerner (ca. 250g) <span class="note">Til 'jord'</span></label></li>
+            <li><input type="checkbox" id="sun9"><label for="sun9">Varm Bouillon</label> <span class="note">Forsigtigt, må ikke koge</span></li>
+            <li><input type="checkbox" id="sun10"><label for="sun10">Tilsæt Rødkålsjuice til Bouillon</label> <span class="note">Tag gryde af varmen, rør juice i til jævn farve</span></li>
+            <li><input type="checkbox" id="sun11"><label for="sun11">Server Suppe straks med Citronsaft tilbehør</label> <span class="note">Instruer gæster om at dryppe i</span></li>
         </ul>
     </div>
 
     <div class="category">
-        <h2>Specialbutik / Helsekost / Online</h2>
+        <h2>Servering af Forret ("Unblock")</h2>
         <ul>
-             <li><input type="checkbox" id="item32"><label for="item32">Lecithin pulver (Soja/solsikke, ca. 5-10g) <span class="note">VIGTIG til skum!</span></label></li>
-             <li><input type="checkbox" id="item33"><label for="item33">Tjek her for: Andeconfit, Rygeost, Tørrede svampe, god Trøffelolie (hvis ikke fundet i supermarked)</label></li>
+            <li><input type="checkbox" id="sun12"><label for="sun12">Anret Forret Færdig</label> <span class="note">Placer Parmesan Knas på toppen</span></li>
+            <li><input type="checkbox" id="sun13"><label for="sun13">Server Forret</label></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>Mens Gæsterne Spiser Forret / Lige før Hovedret</h2>
+        <ul>
+            <li><input type="checkbox" id="sun14"><label for="sun14">Varm Selleripuré</label> <span class="note">Forsigtigt i gryde, juster konsistens/smag. Hold varm.</span></li>
+            <li><input type="checkbox" id="sun15"><label for="sun15">Færdiggør Bygotto: Varm op med bouillon</label> <span class="note">Ca. 10-15 min, til cremet/al dente</span></li>
+            <li><input type="checkbox" id="sun16"><label for="sun16">Færdiggør Bygotto: Tilsæt stegte svampe</label> <span class="note">Varm med et par min.</span></li>
+            <li><input type="checkbox" id="sun17"><label for="sun17">Færdiggør Bygotto: Smag til</label> <span class="note">Evt. parmesan/smør/trøffelolie, salt/peber. Hold varm.</span></li>
+            <li><input type="checkbox" id="sun18"><label for="sun18">Lav Persille-Citron Skum</label> <span class="note">ALLERSIDSTE ØJEBLIK: Opløs lecithin pulver i kold væske, pisk skum i overfladen 1-2 min, lad stå 1 min</span></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>Servering af Hovedret ("Breathwork")</h2>
+        <ul>
+            <li><input type="checkbox" id="sun19"><label for="sun19">Anret Hovedret Straks</label> <span class="note">Bygotto + Puré + Skum på toppen</span></li>
+            <li><input type="checkbox" id="sun20"><label for="sun20">Server med Andelår ved siden af</label></li>
+        </ul>
+    </div>
+
+    <div class="category">
+        <h2>Resten af Aftenen</h2>
+        <ul>
+            <li><input type="checkbox" id="sun21"><label for="sun21">Server evt. Dessert / Kaffe</label></li>
+            <li><input type="checkbox" id="sun22"><label for="sun22">Nyd aftenen!</label></li>
         </ul>
     </div>
 
